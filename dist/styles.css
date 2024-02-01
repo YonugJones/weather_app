@@ -1,0 +1,48 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono';
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* HEADER */
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    font-size: 30px;
+}
+
+.search-section {
+    display: flex;
+    align-items: center;
+}
+
+#search-input {
+    border-radius: 20px;
+    padding: 10px;
+    border: none;
+}
+
+#search-btn {
+    font-size: 40px;
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+#search-btn:hover {
+    transform: scale(1.05);
+}
