@@ -3,10 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <script type="module" src="main.js"></script>
+    <script src="https://kit.fontawesome.com/a2df790e0c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic" rel="stylesheet" />
 </head>
 <body>
-    <div id="content"></div>
+    <div id="content">
+        <header>
+            <div class="title-section">WeatherApp</div>
+         
+            <form class="search-section">
+                <input id="search-input" type="text" placeholder="enter city">
+                <button class="btn" id="search-btn" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
+        </header>
+        <main>
+            <div class="display"></div>
+        </main>
+    </div>
 </body>
 </html>
