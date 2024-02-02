@@ -9,6 +9,7 @@
 body {
     background-color: black;
     color: white;
+    padding: 30px;
 }
 
 /* HEADER */
@@ -18,8 +19,9 @@ header {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
-    font-size: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-size: 50px;
 }
 
 .search-section {
@@ -45,4 +47,77 @@ header {
 
 #search-btn:hover {
     transform: scale(1.05);
+}
+
+/* DISPLAY */
+.display {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.location-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.conditions-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 100px;
+    height: auto;
+    font-size: 50px;
+}
+
+.temperature-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.extras-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.wind-section {
+    margin-right: 40px;
+}
+
+.humidity-section {
+    margin-left: 40px;
+
+}
+
+.units-section {
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+}
+
+.units-fahrenheit,
+.units-celsius {
+    cursor: pointer;
+    transition: 200ms;
+}  
+
+.units-fahrenheit:hover,
+.units-celsius:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+}  
+
+.active {
+    font-weight: bold;
 }
